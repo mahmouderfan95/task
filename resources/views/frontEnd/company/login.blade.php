@@ -6,7 +6,7 @@
         @foreach($errors->all() as $error)
             <div class="alert alert-danger">{{$error}}</div>
         @endforeach
-        <form action="{{route('comapnylogin')}}" method="POST">
+        <form action="{{route('companyLogin')}}" method="POST">
             {{ csrf_field() }}
             <h2 class="text-center">Login Company</h2>
             <div class="form-group">

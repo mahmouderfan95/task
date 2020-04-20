@@ -23,11 +23,11 @@ Route::group(['namespace'=>'frontEnd'],function(){
     Route::get('/register/employe','employeController@getRegister')->name('employeRegister');
     Route::post('/register/employe','employeController@employePostRegister')->name('postEmployeRegister');
     Route::get('login/company','registerController@getLoginCompany')->name('getLoginCompany');
-    Route::post('login/company','registerController@companyLogin')->name('comapnylogin');
+    Route::post('login/company','registerController@companyLogin')->name('companyLogin');
     Route::get('login/employe','registerController@getLoginEmploye')->name('getLoginEmploye');
     Route::post('login/employe','registerController@employeLogin')->name('employeLogin');
-    Route::get('/welcome/employe/{id}','registerController@welcomeEmploye')->name('welcomeEmploye');
-    Route::get('/welcome/{id}','registerController@welcomeCompany')->name('welcomeCompany')->middleware('auth');
+    Route::get('/welcome/employe','registerController@welcomeEmploye')->name('welcomeEmploye')->middleware('auth');
+    Route::get('/welcome','registerController@welcomeCompany')->name('welcomeCompany')->middleware('auth');
 });
 
 

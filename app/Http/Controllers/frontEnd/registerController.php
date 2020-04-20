@@ -28,7 +28,7 @@ class registerController extends Controller
                 'message'   => 'email or passworn is not correct !'
             ]);
         }
-        return redirect()->route('welcomeCompany',auth()->user()->id);
+        return redirect()->route('welcomeCompany');
     }
 
     /* login company */
@@ -43,6 +43,6 @@ class registerController extends Controller
                 'message'   => 'email or passworn is not correct !'
             ]);
         }
-        return redirect()->route('welcomeEmploye',auth()->user()->id);
+        return redirect()->route('welcomeEmploye');
     }
 }

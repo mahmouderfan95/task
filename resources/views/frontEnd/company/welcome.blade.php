@@ -1,1 +1,1 @@
-welcome ya {{auth()->user()->username}}
+welcome company page 
