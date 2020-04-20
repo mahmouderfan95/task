@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.register{
+    padding: 30px 0;
+}
+.company-registe,
+.employe-register{
+    background-color: #EEE;
+    padding: 30px 0;
+}
+.company form{
+    max-width: 500px;
+}
+
+
+.login{
+    background-color: #EEE;
+    padding: 10px;
+}
+.login form{
+    max-width: 500px;
+    margin: 100px auto;
+}
