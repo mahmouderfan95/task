@@ -26,7 +26,7 @@ class employeController extends Controller
         /* upload img **/
 
         Employies::create($employeData);
-        return redirect()->route('register')->with('sucMsg','Register successfuly');
+        return redirect()->route('employeRegister')->with('sucMsg','Register successfuly');
         // return dd($request->all());
     }
 }

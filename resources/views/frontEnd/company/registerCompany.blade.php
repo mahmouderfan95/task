@@ -8,6 +8,10 @@
             @foreach($errors->all as $error)
                 <div class="alert alert-danger">{{$error}}</div>
             @endforeach
+            @if(session('sucMsg'))
+                <div class="alert alert-success">{{session('sucMsg')}}</div>
+
+            @endif
             <form action="{{route('postCompanyRegister')}}" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class = "form-group">

@@ -26,7 +26,7 @@ class CompanyController extends Controller
         /* upload img **/
 
         Companyies::create($companyData);
-        return redirect()->route('register')->with('sucMsg','Register successfuly');
+        return redirect()->route('companyRegister')->with('sucMsg','Register successfuly');
         // return dd($request->all());
     }
 }
